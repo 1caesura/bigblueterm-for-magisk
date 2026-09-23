@@ -1,7 +1,6 @@
-id=MMT-Ex
-name=Magisk Module Template Extended
-version=v3.7
-versionCode=19
-author=Zackptg5
-description=Magisk Module Template Extended
-updateJson=https://raw.githubusercontent.com/Zackptg5/MMT-Extended/master/update.json
+id=custom_font_installer
+name=myfont
+version=v1.0
+versionCode=1
+author=1caesura
+description:systemlessly replaces default font with any font
