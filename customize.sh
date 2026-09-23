@@ -1,11 +1,11 @@
-# set what happens during install
 SKIPMOUNT=false
 PROPFILE=false
 POSTFITYPE=false
 LATESTARTSERVICE=false
 
-# print custom text to magisk during flashing
-ui_print "λ installing the fonts.."
+. $CONFIGPATH/public.sh
 
-# enforce system permissions for fonts
-set_perm_recursive $MODPATH/system/etc 0 0 0755 0644
+ui_print "λ overriding default samsung font..."
+
+# set permis for the injected fonts
+set_perm_recursive $MODPATH/system/fonts 0 0 0755 0644
