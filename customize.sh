@@ -8,4 +8,4 @@ LATESTARTSERVICE=false
 ui_print "λ installing the fonts.."
 
 # enforce system permissions for fonts
-set_perm_recursive $MODPATH/system/fonts 0 0 0755 0644
+set_perm_recursive $MODPATH/system/etc 0 0 0755 0644
