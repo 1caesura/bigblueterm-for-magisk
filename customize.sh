@@ -1,11 +1,10 @@
+# basic setup toggles
 SKIPMOUNT=false
 PROPFILE=false
 POSTFITYPE=false
 LATESTARTSERVICE=false
 
-. $CONFIGPATH/public.sh
+ui_print "λ overriding one ui fonts.."
 
-ui_print "λ overriding default samsung font..."
-
-# set permis for the injected fonts
+# grant storage permissions to the injected fonts folder
 set_perm_recursive $MODPATH/system/fonts 0 0 0755 0644
